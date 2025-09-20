@@ -42,4 +42,15 @@ class Pet:
             self.energy -= 1
 
     
-    
+    def to_dict(self):
+        return
+    {
+                "name": self.name,
+                "hunger": self.hunger,
+                "happiness": self.happiness,
+                "energy": self.energy,
+                "kind": self.__class__.__name__
+
+            }
+        
+
